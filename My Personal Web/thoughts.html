@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thoughts | Nurafiqah Aliaa</title>
+
+<style>
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #c8dda0;
+}
+
+.wrapper{
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fffdf6;
+  border-radius: 25px;
+  border: 2px dashed #9db87a;
+  overflow: hidden;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.menu{
+  display: flex;
+  gap: 18px;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.menu a:hover{
+  background: #cfe3b4;
+}
+
+.hero{
+  text-align: center;
+  padding: 70px 40px 40px;
+  background:
+    linear-gradient(#fdf8f0 1px, transparent 1px),
+    linear-gradient(90deg,#fdf8f0 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+.move-text{
+  margin: 0;
+  font-size: 40px;
+  animation: fadeSlide 2s ease forwards;
+}
+
+@keyframes fadeSlide{
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero p{
+  font-size: 16px;
+  color: #555;
+}
+
+.anchor-menu{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.anchor-menu a{
+  text-decoration: none;
+  background: #e3efcc;
+  color: #333;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.anchor-menu a:hover{
+  background: #cfe3b4;
+}
+
+.section{
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.card{
+  max-width: 700px;
+  margin: 25px auto;
+  background: #fdf0d8;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.quote{
+  background: #cfe3b4;
+  padding: 25px;
+  border-radius: 15px;
+  font-style: italic;
+  margin-top: 25px;
+}
+
+.quote img{
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+footer{
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
+  color: #555;
+}
+</style>
+</head>
+
+<body id="top">
+
+<div class="wrapper">
+
+  <div class="nav">
+    <div class="logo">nurafiqah aliaa.</div>
+    <div class="menu">
+      <a href="index.html">About Me</a>
+      <a href="personal.html">Personal</a>
+      <a href="education.html">Education</a>
+      <a href="moment.html">Moments</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="interest.html">Interest</a>
+      <a href="thoughts.html">Thoughts</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <h1 class="move-text">THOUGTHS</h1>
+    <p>My reflections &amp; mindset 🌱</p>
+  </section>
+
+  <div class="anchor-menu">
+    <a href="#thoughts-content">↓ Read My Thoughts</a>
+  </div>
+
+  <section class="section" id="thoughts-content">
+    <div class="card">
+      <p>
+        I believe that every experience helps me grow as a person.
+        Learning new things motivates me to improve myself and prepare
+        for my future career.
+      </p>
+
+      <div class="quote">
+        <img src="quote.jpeg" alt="Inspirational Quote Image">
+       
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nurafiqah Aliaa<br>
+    Disclaimer: This website is created for academic purposes only (IML254)
+  </footer>
+
+</div>
+
+</body>
+</html>
