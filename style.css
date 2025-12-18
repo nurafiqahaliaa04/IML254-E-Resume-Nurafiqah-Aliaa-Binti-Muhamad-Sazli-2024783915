@@ -1,0 +1,196 @@
+/* =====================
+   GLOBAL
+===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #c8dda0;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fffdf6;
+  border-radius: 25px;
+  border: 2px dashed #9db87a;
+  overflow: hidden;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #cfe3b4;
+}
+
+/* =====================
+   HERO / TITLE
+===================== */
+.hero {
+  text-align: center;
+  padding: 70px 40px;
+  background:
+    linear-gradient(#fdf8f0 1px, transparent 1px),
+    linear-gradient(90deg, #fdf8f0 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+.move-text {
+  margin: 0;
+  font-size: 48px;
+  animation: fadeSlide 2s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 40px;
+}
+
+/* =====================
+   CARDS
+===================== */
+.card {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fdf0d8;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+/* =====================
+   IMAGES
+===================== */
+.about-img,
+.hobbies-img,
+.interest-img,
+.moment-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.hobbies-img:hover,
+.interest-img:hover,
+.moment-img:hover {
+  transform: scale(1.05);
+}
+
+/* =====================
+   TABLES
+===================== */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fdf0d8;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+th {
+  background: #cfe3b4;
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  padding: 15px;
+}
+
+tr:nth-child(even) td {
+  background: #fff7e6;
+}
+
+/* =====================
+   SCROLL TOP BUTTON
+===================== */
+.anchor-box {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.scroll-top {
+  display: inline-block;
+  padding: 10px 26px;
+  background: #cfe3b4;
+  color: #222;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.scroll-top:hover {
+  background: #b7d39b;
+  transform: translateY(-4px);
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
+  color: #555;
+}
